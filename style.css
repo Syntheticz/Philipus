@@ -67,15 +67,7 @@ nav ul li a:hover{
     transition: color 1s ease-out;
 }
 
-.box{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
 
-    height: 100vh;
-    background-color: rgba(6, 70, 99, 0.7);
-    
-}
 
 #content{
     display: flex;
@@ -100,16 +92,137 @@ nav ul li a:hover{
     color: white;
 }
 
+.box{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    height: 120vh;
+    width: 100%;
+    background-color: rgba(6, 70, 99, 0.7);
+    
+}
 
+.boxs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    height: 120vh;
+    width: 100%;
+    background-color: rgba(6, 70, 99, 0.7);
+    
+}
 
 .box img{
     width: 300px;
     height: 300px;
+    top: 150px;
+    position: relative;
 }
+
+
+h2{
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    margin: 50px auto;
+    letter-spacing: 5px;
+    font-size: 2.5em;
+    color: white;
+
+}
+
+h2::before{
+    background-color: white;
+    display: block;
+    width: 120px;
+    height: 2px;
+    content: "";
+    position: absolute;
+    left: -127px;
+    top: 22px;
+    z-index: 0;
+}
+
+h2::after{
+    background-color: white;
+    display: block;
+    width: 120px;
+    height: 2px;
+    content: "";
+    position: absolute;
+    right: -127px;
+    top: 22px;
+    z-index: 0;
+}
+
+.gallery{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: -20%;
+}
+
+.contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: block;
+    background-color: #04293A;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    left: 0;
+    min-width: 300px;
+
+    min-height: 200px;
+    max-height: 300px;
+}
+
+.contents img{
+    object-fit: cover;
+    position: relative;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    width: 100%;
+    height: 85%;
+
+}
+
+.caption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -5px;
+    width: 100%;
+    height: 15%;
+    align-items: center;
+}
+
+.caption a{
+    text-decoration: none;   
+}
+
+.caption a p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    letter-spacing: 2.5px;
+    text-decoration: none;
+    color:#fcf1e4;
+}
+
+
 
 footer{
     display: flex;
     justify-content: center;
+    position: absolute;
+    bottom: -20vh;
+    width: 100%;
     padding: 2px 0;
     background-color: #ECB365;
 }
