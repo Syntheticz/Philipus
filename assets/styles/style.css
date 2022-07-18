@@ -23,10 +23,9 @@ body{
 
 
 nav {
-    position: fixed;
+    position: absolute;
+    top: 3vh;
     width: 100%;
-    padding: 20px;
-    background-color: var(--color2);
     z-index: 1;
 }
 
@@ -83,12 +82,13 @@ nav ul li a:hover{
 }
 
 
-
 #content{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
+ 
 
 .text{
     margin: 0;
@@ -107,23 +107,13 @@ nav ul li a:hover{
     color: var(--color6);
 }
 
-
-
-.box img{
-    width: 300px;
-    height: 300px;
-    top: 150px;
-    position: relative;
-}
-
-
 .boxs{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     position: relative;
-    height: 120vh;
+    height: 100vh;
     width: 100%;
     background-color: var(--color5);
     
@@ -131,17 +121,38 @@ nav ul li a:hover{
 
 .boxz{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    position: relative;
-    height: 120vh;
+    height: 100vh;
     width: 100%;
     background-color: var(--color5);
     
 }
 
-.dp_container img{
-    opacity: 1;
+ #content{
+    width: 40%;
+    height: 50%;
+} 
+
+.dp_container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+ .dp_container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
+.sub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 0;
+    width: 100%;
 }
 
 .content1{
@@ -150,7 +161,8 @@ nav ul li a:hover{
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 60vh;
+    padding: 3em 0;
+    border-bottom: 5px solid var(--color1);
 }
 
 .content_text{
@@ -176,8 +188,8 @@ nav ul li a:hover{
     align-items: center;
     justify-content: center;
     margin: 0 40px 0 40px;
-    width: 40%;
-    height: 50%;
+    width: 25%;
+    height: 25%;
 }
 
 .content_image img{
@@ -189,14 +201,11 @@ nav ul li a:hover{
 
 .content_image_container{
     width: 100%;
-    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     top: -20px;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .content_image_subcontainer{
@@ -205,6 +214,7 @@ nav ul li a:hover{
     border-top-right-radius: 10%;
     border-bottom-left-radius: 5%;
     border-bottom-right-radius: 5%;
+    margin: 1em;
     width: 160px;
     height: 200px;
 }
@@ -306,7 +316,7 @@ h2::after{
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
 
 h5{
@@ -319,41 +329,6 @@ h5{
 
 }
 
-h5::before{
-    background-color: white;
-    display: block;
-    width: 60px;
-    height: 2px;
-    content: "";
-    position: absolute;
-    left: -67px;
-    top: 14px;
-    z-index: 0;
-}
-
-h5::after{
-    background-color: white;
-    display: block;
-    width: 60px;
-    height: 2px;
-    content: "";
-    position: absolute;
-    right: -67px;
-    top: 14px;
-    z-index: 0;
-}
-
-.content2{
-    background-color: #064663;
-    position: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-}
-
 .content3{
     background-color: #064663;
     position: inherit;
@@ -362,18 +337,7 @@ h5::after{
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 195vh;
-}
-
-.content3{
-    background-color: #064663;
-    position: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 195vh;
+    height: auto;
 }
 
 .content4{
@@ -384,7 +348,6 @@ h5::after{
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 50vh;
 }
 
 .video_contents{
@@ -467,17 +430,15 @@ h5::after{
     justify-content: center;
     align-items: center;
     position: relative;
-    display: block;
     background-color: var(--color2);
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
     border-bottom-left-radius: 5%;
     border-bottom-right-radius: 5%;
     left: 0;
-    min-width: 300px;
-
-    min-height: 200px;
-    max-height: 300px;
+    margin: 1em;
+    height: 30vh;
+    width: 25vw;
 }
 
 .contents img{
@@ -494,11 +455,8 @@ h5::after{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    top: -5px;
     width: 100%;
     height: 15%;
-    align-items: center;
 }
 
 .caption a{
@@ -545,10 +503,9 @@ h5::after{
 }
 
 .sidebar_content_container{
-    position: relative;
-    top: 10px;
     margin-left: 20px;
     margin-right: 20px;
+    padding: 1em 0;
 
 }
 
@@ -573,9 +530,8 @@ h5::after{
 .skill_set1{
     display: flex;
     flex-direction: column;
+    padding: 20px;
     border-right: 5px solid var(--color6);
-    width: 25%;
-    height: 100%;
 }
 
 .education_container{
@@ -688,16 +644,18 @@ h5::after{
 .contacts_subcontainer{
     display: flex;
     background-color: var(--color2);
-    width: 90%;
-    height: 50%;
+    margin-top: 3em;
+    padding: 0 10em;
+    width: auto;
+    height: auto;
 }
 
 .contacts_side_container{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 25%;
-    height: 100%;
+    width: auto;
+    height: auto;
     border-right: 5px solid #064663;
 }
 
@@ -785,6 +743,10 @@ h5::after{
 
 }
 
+.bio_text{
+    width: 100%;
+}
+
 .footer_container svg{
     width: 40px;
     height: 40px;
@@ -801,7 +763,123 @@ h5::after{
 }
 
 footer{
+    position: relative;
+    bottom: 0em;
     width: 100%;
     padding: 2px 0;
     background-color: var(--color4);
 }
+
+
+@media only screen and (max-width: 900px) {
+
+        .boxz{
+            height: max-content;
+            flex-direction: column;
+            justify-content: space-around;
+            height: auto;
+        }
+
+        .boxs{
+            height: auto;
+        }
+
+        .dp_container{
+            width: 20em;
+            height: 20em;
+        }
+        
+        .intro_text_container{
+            display: flex;
+            flex-direction: column;
+            width: 20em;
+            height: 10em;
+
+        }
+        
+        .dp_container{
+            margin-top: 7em;
+            width: 20em;
+            height: 20em;
+        }
+
+        #content{
+            margin-top: 7em;
+        }
+
+        .gallery{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contents{
+            width: 30vw;
+            height: 40vh;
+        }
+
+        .bio_main{
+            height: auto;
+        }
+
+        .bio_container{
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        .skills_container{
+            flex-direction: column;
+        }
+        .skill_set1{
+            border-right: none;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 5px solid var(--color6);
+        }
+
+        .education_container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contacts_subcontainer{
+            flex-direction: column;
+        }
+
+        .contacts_side_container{
+            border-right: none;
+        }
+
+        .contact_main_form{
+            width: 100%;
+        }
+
+        .content1{
+            flex-direction: column;
+        }
+
+        .content_image_container{
+            flex-direction: column;
+        }
+
+        .content_image_subcontainer{
+            margin: 1em;
+        }
+
+        .video_contents{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .video_player_container{
+            margin: 5em 0;
+        }
+
+        .sidebar_content1{
+            width: autoP;
+        }
+  }
