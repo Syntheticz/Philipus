@@ -121,7 +121,7 @@ nav ul li a:hover{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    height: 100vh;
+    height: auto;
     width: 100%;
     background-color: var(--color5);
     
@@ -136,12 +136,12 @@ nav ul li a:hover{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    width: 50%;
+    height: auto;
 }
 
  .dp_container img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 80%;
 } 
 
 .sub{
@@ -324,9 +324,19 @@ h5{
     width: 100%;
 }
 
+.player_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5em 0;
+    width: 100%;
+    height: 100%;
+}
+
 .video_contents{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-left: 50px;
     margin-right: 50px;
     width: 100%;
@@ -372,7 +382,7 @@ h5{
     display: flex;
     justify-content: space-around;
     position: relative;
-    top: -20%;
+    margin-bottom: 2em;
 }
 
 .image_gallery_container{
@@ -411,8 +421,14 @@ h5{
     border-bottom-right-radius: 5%;
     left: 0;
     margin: 1em;
-    height: 30vh;
-    width: 25vw;
+    height: 50vh;
+    width: 23vw;
+}
+
+.contents a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
 }
 
 .contents img{
@@ -437,7 +453,7 @@ h5{
     text-decoration: none;   
 }
 
-.caption a p{
+.caption p{
     font-family: var(--font1);
     font-weight: bold;
     font-size: 1.5em;
@@ -450,6 +466,7 @@ h5{
     display: flex;
     flex-direction: column;
     background-color: var(--color2);
+    margin-right: 5em;
 
     width: 50%;
     height: 50%;
@@ -473,7 +490,6 @@ h5{
 .sidebar{
     background-color: var(--color2);
     width: 30%;
-    height: 50%;
 }
 
 .sidebar_content_container{
@@ -486,13 +502,13 @@ h5{
 .sidebar_content1{
     background-color: var(--color4);
     width: 100%;
-    height: 50%;
+    height: 100%;
 }
 
 .sidebar_content2{
     background-color: var(--color2);
     width: 100%;
-    height: 50%;
+    height: 100%;
 }
 
 .skills_container{
@@ -535,14 +551,14 @@ h5{
     flex-direction: column;
     
     margin-left: 50px;
-    width: 25%;
-    height: 100%;
+    width: 100%;
+    height: auto;
 }
 
 .bio_side_image{
     margin-top: 50px;
     width: 100%;
-    height: 25%;
+    height: auto;
 }
 
 
@@ -599,6 +615,7 @@ h5{
 .bio_main h3{
     font-family: var(--font2);
     font-size: 3.2em;
+    text-align: center;
     color: var(--color6);
 }
 
@@ -695,6 +712,7 @@ h5{
     color: var(--color6);
     margin-left: 3em;
     margin-right: 3em;
+    font-size: 1.5em;
     font-family: var(--font1);
     text-align: justify;
 }
@@ -769,8 +787,8 @@ footer{
         
         .dp_container{
             margin-top: 7em;
-            width: 20em;
-            height: 20em;
+            width: auto;
+            height: auto;
         }
 
         #content{
@@ -785,7 +803,7 @@ footer{
 
         .contents{
             width: 15em;
-            height: 10em;
+            height: 17em;
         }
 
         .bio_main{
@@ -887,6 +905,19 @@ footer{
             font-size: 2.5em;
         }
 
+        .text{
+            letter-spacing: .05em;
+            font-size: .5em;
+        }
+
+        .player_container{
+            flex-direction: column;
+        }
+
+        #names{
+            font-size: 1em;
+            letter-spacing: .04em;
+        }
 
         nav ul li a{
             font-size: .5em;
