@@ -67,8 +67,7 @@ nav ul li a{
     transition: color 1s ease-in;
 }
 
-nav ul li a:hover{
-    letter-spacing: 2.5px;
+nav ul li a:hover{ 
     cursor: pointer;
     font-weight: bolder;
     text-decoration: none;
@@ -595,14 +594,9 @@ h5{
     
 }
 
-.bio_main{
-    width: 75%;
-    height: auto;
-}
+
 
 .bio_main h3{
-    margin-top: 200px;
-    margin-left: 100px;
     font-family: var(--font2);
     font-size: 3.2em;
     color: var(--color6);
@@ -642,7 +636,7 @@ h5{
 }
 
 .contact_main_form{
-    margin: 20px;
+    margin: 3em;
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -699,8 +693,8 @@ h5{
 
 .bio_main p{
     color: var(--color6);
-    margin-left: 100px;
-    margin-right: 20px;
+    margin-left: 3em;
+    margin-right: 3em;
     font-family: var(--font1);
     text-align: justify;
 }
@@ -720,6 +714,7 @@ h5{
 
 .bio_text{
     width: 100%;
+
 }
 
 .footer_container svg{
@@ -789,11 +784,15 @@ footer{
         }
 
         .contents{
-            width: 30vw;
-            height: 40vh;
+            width: 15em;
+            height: 10em;
         }
 
         .bio_main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             height: auto;
             width: auto;
         }
@@ -823,6 +822,8 @@ footer{
 
         .contacts_subcontainer{
             flex-direction: column;
+            width: 50%;
+            margin-bottom: 1em;
         }
 
         .contacts_side_container{
@@ -830,7 +831,10 @@ footer{
         }
 
         .contact_main_form{
+            margin: 0;
             width: 100%;
+            padding: 0;
+            margin: 1em 0;
         }
 
         .content1{
@@ -874,11 +878,23 @@ footer{
             flex-direction: column;
         }
         
+        .bio_side{
+            width: 50%;
+            margin: 0;
+        }
+
+        .bio_main h3{
+            font-size: 2.5em;
+        }
+
+
         nav ul li a{
-            font-size: .7em;
+            font-size: .5em;
+            letter-spacing: normal ;
         }
 
         h2{
-            font-size: 1.5em;
+            font-size: 1em;
+            letter-spacing: .2em;
         }
   }
